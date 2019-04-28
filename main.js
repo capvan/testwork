@@ -1,6 +1,7 @@
 
+/*Загрузка XML*/
 const loadButton = document.querySelector('#loadButton');
-const result = document.querySelector('#result');
+// const result = document.querySelector('#result');
 
 loadButton.addEventListener('click', () => {
     const xhr = new XMLHttpRequest();
@@ -12,7 +13,9 @@ loadButton.addEventListener('click', () => {
             console.log('Что-то пошло не так');
         } else {
             console.log(xhr.responseXML);
-            result.innerHTML = xhr.responseXML; 
+            // result.innerHTML = xhr.responseXML; 
         }
+
+        alert(document.getElementsByTagName('a').length);
     }); 
 } );
