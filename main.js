@@ -15,15 +15,6 @@ loadButton.addEventListener('click', () => {
             console.log(xhr.responseXML);
             // result.innerHTML = xhr.responseXML; 
         }
-
-        const tagCount = document.querySelectorAll('#tagCount');
-        tagCount.addEventListener('click', () => {
-            var linkCount = tagCount.getElementsByTagName('p');
-
-            for (var i = 0; i < elements.lenght; i++) {
-                console.log(i);
-            }
-        })
         // alert(document.getElementsByTagName('p').length);
     }); 
 } );
