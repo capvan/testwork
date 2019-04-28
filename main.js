@@ -15,6 +15,8 @@ loadButton.addEventListener('click', () => {
             console.log(xhr.responseXML);
             // result.innerHTML = xhr.responseXML; 
         }
-        // alert(document.getElementsByTagName('p').length);
+
+        var aCount = document.getElementsByTagName('p').length;
+        alert(aCount);
     }); 
 } );
