@@ -10,9 +10,9 @@ loadButton.addEventListener('click', () => {
     xhr.send();
     xhr.addEventListener('load', () => {
         if (xhr.status >= 400) {
-            alert('Что-то пошло не так');
+            console.log('Что-то пошло не так');
         } else {
-            alert(xhr.responseXML);
+            console.log(xhr.responseXML);
             // result.innerHTML = xhr.responseXML; 
         }
     }); 
