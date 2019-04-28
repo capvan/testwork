@@ -8,6 +8,6 @@ loadButton.addEventListener('click', () => {
     xhr.open('GET', 'Viygotskiyi_viy_L._Psihologiya_Iskusstva.xml');
     xhr.send();
     xhr.addEventListener('load', () => {
-        console.log('ответ получен');
+        console.log(xhr.responseXML);
     }); 
 } );
