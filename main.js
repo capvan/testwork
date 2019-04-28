@@ -6,5 +6,8 @@ loadButton.addEventListener('click', () => {
     const xhr = new XMLHttpRequest();
 
     xhr.open('GET', 'Viygotskiyi_viy_L._Psihologiya_Iskusstva.xml');
-    xhr.send(); 
+    xhr.send();
+    xhr.addEventListener('load', () => {
+        console.log('ответ получен');
+    }); 
 } );
