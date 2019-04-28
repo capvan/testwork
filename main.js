@@ -12,7 +12,7 @@ loadButton.addEventListener('click', () => {
             console.log('Что-то пошло не так');
         } else {
             console.log(xhr.responseXML);
-            result.innerText = xhr.responseXML; 
+            result.innerXML = xhr.responseXML; 
         }
     }); 
 } );
